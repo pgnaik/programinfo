@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Program Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles here */
+        h1 {
+            text-align: center;
+            font-family: 'Your Attractive Font', sans-serif; /* Replace 'Your Attractive Font' with the actual font family */
+            color: #007bff; /* Blue color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <img src="assets/images/siber.jpg" alt="Logo" class="img-fluid mb-3" style="max-width: 150px; height: auto;">
+        <h1 class="mb-4">Program Information</h1>
+        <form id="queryForm">
+            <div class="form-group">
+                <label for="department">Select Department:</label>
+                <select class="form-control" id="department" name="department">
+                    <!-- Options will be populated dynamically through AJAX -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="programme">Select Programme:</label>
+                <select class="form-control" id="programme" name="programme">
+                    <!-- Options will be populated dynamically through AJAX -->
+                </select>
+            </div>
+            <!-- <button type="button" class="btn btn-primary" onclick="getProgrammes()">Get Programmes</button> -->
+        </form>
+        
+        <div id="programInfo" class="mt-4">
+            <!-- Program information will be displayed here -->
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
